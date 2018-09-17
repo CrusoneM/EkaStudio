@@ -1,0 +1,528 @@
+/* Cosas */
+body{
+	max-width: 100vw;
+	overflow-x: hidden;
+}
+.btn-custom{
+	background-color: #000;
+    color: #fff;
+    border-radius: 0;
+    font-weight: bold;
+    padding: 1vh 2vw;
+    font-size: 2vw;
+    display: inline-block;
+    transition: .3s ease;
+}
+.btn-custom:hover{
+	background-color: #353535;
+	transition: .3s ease;
+}
+.section-divider{
+	width: 80vw;
+	height: 0.2vh;
+	margin: auto;
+	background: #000;
+}
+[type="checkbox"].filled-in:checked+span:not(.lever):after {
+    top: 0;
+    width: 40px;
+    height: 40px;
+    border: #000 2px solid;
+    background-color: #fff;
+    z-index: 0;
+    border-radius: 50%;
+}
+[type="checkbox"].filled-in:not(:checked)+span:not(.lever):after {
+    top: 0px;
+    width: 40px;
+    height: 40px;
+    border: 2px solid #000;
+    background-color: #fff;
+    border-radius: 50%;
+    z-index: 0;
+}
+[type="checkbox"].filled-in:checked+span:not(.lever):before {
+    top: 5px;
+    left: 9px;
+    width: 10px;
+    height: 20px;
+    border-top: 2px solid transparent;
+    border-left: 2px solid transparent;
+    border-right: 2px solid #000;
+    border-bottom: 2px solid #000;
+    -webkit-transform: rotateZ(37deg);
+    transform: rotateZ(37deg);
+    -webkit-transform-origin: 100% 100%;
+    transform-origin: 100% 100%;
+}
+
+/*==========================*/
+/* TEMPLATE HEADER & FOOTER */
+/*==========================*/
+nav{
+	background: #fff;
+	text-align: center;
+	line-height: inherit;
+	-webkit-box-shadow: inherit;
+    box-shadow: inherit;
+}
+nav > #nav-logo{
+	width: 6.5vw;
+}
+nav > #nav-info{
+	color: #000;
+}
+nav > #nav-info > h2{
+	margin: 2vh 0 0 0;
+	font-size: 2vw;
+	font-weight: bold;
+}
+nav > #nav-info > h3{
+	color: grey;
+    margin: 1vh 0;
+    font-size: 1.3vw;
+    font-weight: bold;
+}
+nav > #nav-info > p{
+	color: grey;
+    margin: 3vh 0;
+    font-size: 0.8vw;
+    font-weight: bold;
+}
+nav > #nav-info > p#nav-date{
+    font-size: 1vw;
+    font-weight: bold;
+    top: 18vh;
+    right: 7vw;
+	position: absolute;
+    transform: rotateZ(-90deg);
+}
+nav > #nav-links{
+	width: 100%;
+    margin-top: 3vh;
+	text-align: center;
+	display: inline-block;
+}
+nav > #nav-links > ul{
+	margin: auto;
+    display: inline-block;
+}
+nav > #nav-links > ul > li{
+	margin: 0 6.5vw;
+}
+nav > #nav-links > ul > li > a{
+	color: grey;
+    font-size: 1.1vw;
+	font-weight: bold;
+	transition: .3s ease;
+}
+nav > #nav-links > ul > li > a:hover{
+	color: #000;
+	background: inherit;
+	transition: .3s ease;
+}
+
+footer{
+	background: url(../images/index/footer-bg.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 55vw;
+    background-position-y: -20vh;
+}
+footer > #social-media{
+	text-align: center;
+    margin: 35vh auto 5vh;
+    width: 45vw;
+}
+footer > #social-media > img{
+	width: 5vw;
+	margin-bottom: 2vh;
+}
+footer > #social-media > div > div > a{
+	font-size: 1.5vw;
+	font-weight: bold;
+	color: #000;
+	transition: .3s ease;
+}
+footer > #social-media > div > div > a:hover{
+	color: grey;
+	transition: .3s ease;
+}
+footer > #social-media > h6{
+	font-size: 2.1vw;
+	font-weight: 100;
+	color: grey;
+}
+
+footer > #info{
+	text-align: center;
+    margin: auto;
+    padding-top: 5vh;
+    width: 80vw;
+    border-top: 1px solid;
+}
+footer > #info > h5{
+	color: grey;
+    margin: 1vh 0;
+    font-size: 1.3vw;
+    font-weight: bold;
+}
+footer > #info > p{
+	color: grey;
+    margin: 3vh 0;
+    font-size: 0.8vw;
+    font-weight: bold;
+}
+footer > #info > h4{
+	color: grey;
+    margin: 10vh 0 0;
+    font-size: 2vw;
+    font-weight: bold;
+}
+footer > #info > h3{
+	color: grey;
+	margin: 0;
+    font-size: 1.5vw;
+}
+
+footer > #links{
+	margin: 2vh auto;
+    width: 80vw;
+}
+footer > #links > div > div > ul.link-list > .link-title{
+	margin-bottom: 4vh;
+}
+footer > #links > div > div > ul.link-list > .link-title > a{
+	color: grey;
+	font-size: 1.3vw;
+	font-weight: bold;
+	transition: .3s ease;
+}
+footer > #links > div > div > ul.link-list > .link-title > a:hover{
+	color: #000;
+	transition: .3s ease;
+}
+footer > #links > div > div > ul.link-list > li > a{
+	color: grey;
+	font-size: 1.3vw;
+	transition: .3s ease;
+}
+footer > #links > div > div > ul.link-list > li > a:hover{
+	color: #000;
+	transition: .3s ease;
+}
+
+/*==========================*/
+/*          INDEX           */
+/*==========================*/
+
+/*========= Main ===========*/
+/*jumbotron section*/
+section#jumbotron{
+	margin: 2vh 0;
+}
+section#jumbotron > img{
+	width: 100vw;
+}
+/*/jumbotron section*/
+
+/*Como funciona section*/
+section#comofunciona{
+	text-align: center;
+	margin: 20vh 0 0vh 0;
+	padding-bottom: 20vh;
+}
+.comofunciona-paso{
+	text-align: left;
+}
+.comofunciona-paso > *{
+	display: inline-block;
+}
+#comofunciona > div > #comofunciona-title{
+	padding-top: 11%;
+    height: 75vh;
+}
+#comofunciona > div > #comofunciona-title > h4{
+	font-weight: bold;
+	font-size: 3vw;
+}
+#comofunciona > div > #comofunciona-info{
+	margin-bottom: 10vh;
+}
+.comofunciona-paso > div.comofunciona-paso-n{
+	position: absolute;
+}
+.comofunciona-paso > div.comofunciona-paso-n > p{
+	margin: 0;
+	font-size: 1vw;
+	text-align: right;
+	font-weight: bold;
+}
+.comofunciona-paso > div.comofunciona-paso-info{
+    width: 24vw;
+    margin-left: 5vw;
+    margin-right: 7vw;
+}
+.comofunciona-paso > div.comofunciona-paso-info > h5{
+	margin: 0;
+	font-size: 2vw;
+	font-weight: bold;
+}
+.comofunciona-paso > div.comofunciona-paso-info > p{
+	margin: 0;
+	font-size: 1.3vw;
+}
+.comofunciona-paso > div.comofunciona-paso-icono{
+	position: absolute;
+}
+.comofunciona-paso > div.comofunciona-paso-icono > img{
+	width: 3.5vw;
+}
+/*/Como funciona section*/
+
+/*Descuentos Section*/
+section#descuentos{
+	padding-top: 20vh;
+	text-align: center;
+}
+section#descuentos > h4{
+	font-size: 2.5vw;
+	font-weight: bold;
+	margin-bottom: 13vh;
+}
+section#descuentos > div > #descuentos-title{
+	float: left;
+	width: 40%;
+	text-align: right;
+}
+section#descuentos > div > #descuentos-title > h5{
+	font-weight: bold;
+	font-size: 1.6vw;
+}
+section#descuentos > div > .vertical-divider{
+	width: 0.1vw;
+    height: 15vh;
+    position: absolute;
+    margin-left: 50%;
+    background: #000;
+}
+section#descuentos > div > #descuentos-descuentos{
+	float: right;
+	width: 40%;
+	text-align: left;
+}
+section#descuentos > div > #descuentos-descuentos > h5{
+	font-weight: bold;
+	font-size: 1.6vw;
+	margin: 0.3vw 0;
+}
+section#descuentos > div > #descuentos-descuentos > h5 > span{
+	margin: 0 2vw;
+}
+
+section#descuentos > #descuentos_arma-tu-plan{
+	width: 88vw;
+	min-height: 66vh;
+	margin: 20vh auto 0;
+    padding: 6vh 3vw 0;
+}
+section#descuentos > #descuentos_arma-tu-plan > h5{
+	padding-top: 20vh;
+	display: inline-block;
+	font-size: 3vw;
+	left: 9vw;
+    position: absolute;
+	font-weight: bold;
+	text-align: left;
+}
+section#descuentos > #descuentos_arma-tu-plan > #arma-tu-plan-planes{
+	text-align: right;
+    width: 68vw;
+    margin-left: auto;
+}
+section#descuentos > #descuentos_arma-tu-plan > #arma-tu-plan-planes > .arma-tu-plan_plan{
+    text-align: center;
+    width: 11vw;
+    margin: 0 1vw;
+    display: inline-block;
+}
+section#descuentos > #descuentos_arma-tu-plan > #arma-tu-plan-planes > .arma-tu-plan_plan > .arma-tu-plan_plan-img > img{
+	width: 100%;
+}
+section#descuentos > #descuentos_arma-tu-plan > #arma-tu-plan-planes > .arma-tu-plan_plan > .arma-tu-plan_plan-checkbox{
+	margin: 10vh 0 0;
+}
+
+section#descuentos > #descuentos_subtotal{
+    width: 88vw;
+    margin: 7vh auto 0;
+    padding: 0vh 3vw;
+    height: 11vh;
+    line-height: 12vh;
+}
+section#descuentos > #descuentos_subtotal > div > div > h5,
+section#descuentos > #descuentos_subtotal > div > div > p{
+	display: inline-block;
+	margin: 0;
+}
+section#descuentos > #descuentos_subtotal > div > div > h5{
+	font-weight: bold;
+	font-size: 1.7vw;
+}
+section#descuentos > #descuentos_subtotal > div > div > p{
+	font-weight: bold;
+	font-size: 1.7vw;
+}
+
+section#descuentos > #descuentos_descuento{
+    width: 88vw;
+    margin: 7vh auto 0;
+    padding: 0vh 3vw;
+    height: 11vh;
+    line-height: 12vh;
+}
+section#descuentos > #descuentos_descuento > div > div > h5,
+section#descuentos > #descuentos_descuento > div > div > p{
+	display: inline-block;
+	margin: 0;
+}
+section#descuentos > #descuentos_descuento > div > div > h5{
+	font-weight: bold;
+	font-size: 2.5vw;
+}
+section#descuentos > #descuentos_descuento > div > div > h6{
+	margin-top: 3.5vh;
+	font-weight: bold;
+	font-size: 1.7vw;
+}
+section#descuentos > #descuentos_descuento > div > div > p{
+	font-weight: bold;
+	font-size: 1.7vw;
+}
+
+section#descuentos > #descuentos_total{
+    width: 88vw;
+    margin: 7vh auto 0;
+}
+section#descuentos > #descuentos_total > #descuentos_descuento_lanzamiento{
+    padding: 2vh 3vw 0;
+    border-bottom: 0.2vh solid #000;
+}
+section#descuentos > #descuentos_total > #descuentos_descuento_lanzamiento > div > div > p{
+	font-weight: bold;
+	font-size: 1.3vw;
+}
+section#descuentos > #descuentos_total > #descuentos_descuento_lanzamiento > div > div > p > span{
+	font-weight: normal;
+    font-style: oblique;
+}
+
+section#descuentos > #descuentos_total > #total{
+    padding: 2vh 3vw 0;
+}
+section#descuentos > #descuentos_total > #total > div > div > h5{
+	font-weight: bold;
+	font-size: 1.7vw;
+    margin-top: 4vh;
+}
+section#descuentos > #descuentos_total > #total > div > div > p{
+	font-weight: bold;
+	font-size: 1.3vw;
+	margin: 0;
+}
+section#descuentos > #descuentos_total > #total > div > div > p > span{
+	font-size: 3vw;
+}
+section#descuentos > #descuentos_total > #total > div > div > p > span.ahorro{
+	font-size: 1.5vw;
+    font-weight: 300;
+}
+/*/Descuentos Section*/
+
+/* Otras opciones Section*/
+section#otras_opciones{
+	padding-top: 20vh;
+	text-align: center;
+	width: 73vw;
+    margin: auto;
+}
+section#otras_opciones > h4{
+	font-size: 3vw;
+	font-weight: bold;
+}
+section#otras_opciones > h5{
+	font-size: 2vw;
+	margin-bottom: 20vh;
+}
+section#otras_opciones > .row > .col.m6{
+	padding: 0vh 2vw;
+}
+section#otras_opciones > .row > .col.m6 > .opcion{
+	padding: 6vh 2vw;
+	height: 70vh;
+}
+section#otras_opciones > .row > .col.m6 > .opcion > h5{
+	font-size: 2vw;
+	font-weight: bold;
+    margin-bottom: 7vh;
+}
+section#otras_opciones > .row > .col.m6 > .opcion > img{
+	width: 11vw;
+}
+section#otras_opciones > .row > .col.m6 > .opcion > .btn-custom{
+	display: block;
+    width: 12vw;
+    font-size: 1.5vw;
+    margin: 4vh auto;
+}
+section#otras_opciones > .row > .col.m6 > .opcion > h4{
+	font-size: 2.2vw;
+	font-weight: bold;
+}
+section#otras_opciones > .row > .col.m6 > .opcion-dos > img{
+	width: 9vw;
+    margin: 0 2vw;
+}
+section#otras_opciones > .row > .col.m6 > .opcion-dos > .btn-custom{
+	margin: 7.5vh auto 4vh;
+}
+section#otras_opciones > .opcion-tres{
+    margin: 20vh auto;
+    padding: 6vh 2vw;
+    min-height: 68vh;
+    width: 50vw;
+}
+section#otras_opciones > .opcion-tres > h5{
+	font-size: 2vw;
+	font-weight: bold;
+    margin-bottom: 7vh;
+}
+section#otras_opciones > .opcion-tres > img{
+	width: 9vw;
+    margin: 0 2vw;
+}
+section#otras_opciones > .opcion-tres > .btn-custom{
+	display: block;
+    width: 12vw;
+    font-size: 1.5vw;
+    margin: 4vh auto;
+}
+section#otras_opciones > .opcion-tres > h4{
+	font-size: 2.2vw;
+	font-weight: bold;
+}
+
+section#otras_opciones > #especifico > h5{
+    font-size: 2vw;
+}
+section#otras_opciones > #especifico > h4{
+    font-size: 3.5vw;
+    font-weight: bold;
+}
+section#otras_opciones > #especifico > .btn-custom{
+    display: block;
+    width: 13vw;
+    margin: 1vh auto;
+    font-size: 1.5vw;
+}
+/*/Otras opciones Section*/
