@@ -14,3 +14,14 @@
 Route::get('/', function () {
     return view('index');
 });
+// Steps
+Route::get('/paso-1', function () {
+    return view('steps/paso-1');
+});
+Route::get('/paso-2', function () {
+    return view('steps/paso-2');
+});
+// Servicios
+Route::get('/servicio/diseño/logotipo', function () {
+    return view('servicios/diseño/logotipo');
+});

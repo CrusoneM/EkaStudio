@@ -3,11 +3,12 @@ body{
 	max-width: 100vw;
 	overflow-x: hidden;
 }
+
 .btn-custom{
-	background-color: #000;
+	background-color: rgb(35, 31, 32);
     color: #fff;
     border-radius: 0;
-    font-weight: bold;
+    font-weight: 500;
     padding: 1vh 2vw;
     font-size: 2vw;
     display: inline-block;
@@ -17,17 +18,34 @@ body{
 	background-color: #353535;
 	transition: .3s ease;
 }
+.btn-custom-btn{
+	cursor: pointer;
+	background-color: rgb(35, 31, 32);
+	border: 0;
+    color: #fff;
+    border-radius: 0;
+    font-weight: 500;
+    padding: 1vh 2vw;
+    font-size: 2vw;
+    display: inline-block;
+    transition: .3s ease;
+}
+.btn-custom-btn:hover{
+	background-color: #353535;
+	transition: .3s ease;
+}
+
 .section-divider{
 	width: 80vw;
 	height: 0.2vh;
 	margin: auto;
-	background: #000;
+	background: rgb(35, 31, 32);
 }
 [type="checkbox"].filled-in:checked+span:not(.lever):after {
     top: 0;
     width: 40px;
     height: 40px;
-    border: #000 2px solid;
+    border: rgb(35, 31, 32) 2px solid;
     background-color: #fff;
     z-index: 0;
     border-radius: 50%;
@@ -36,7 +54,7 @@ body{
     top: 0px;
     width: 40px;
     height: 40px;
-    border: 2px solid #000;
+    border: 2px solid rgb(35, 31, 32);
     background-color: #fff;
     border-radius: 50%;
     z-index: 0;
@@ -48,8 +66,8 @@ body{
     height: 20px;
     border-top: 2px solid transparent;
     border-left: 2px solid transparent;
-    border-right: 2px solid #000;
-    border-bottom: 2px solid #000;
+    border-right: 2px solid rgb(35, 31, 32);
+    border-bottom: 2px solid rgb(35, 31, 32);
     -webkit-transform: rotateZ(37deg);
     transform: rotateZ(37deg);
     -webkit-transform-origin: 100% 100%;
@@ -66,32 +84,32 @@ nav{
 	-webkit-box-shadow: inherit;
     box-shadow: inherit;
 }
-nav > #nav-logo{
+nav > a > #nav-logo{
 	width: 6.5vw;
 }
 nav > #nav-info{
-	color: #000;
+	color: rgb(35, 31, 32);
 }
 nav > #nav-info > h2{
 	margin: 2vh 0 0 0;
 	font-size: 2vw;
-	font-weight: bold;
+	font-weight: 800;
 }
 nav > #nav-info > h3{
 	color: grey;
     margin: 1vh 0;
     font-size: 1.3vw;
-    font-weight: bold;
+    font-weight: 800;
 }
 nav > #nav-info > p{
 	color: grey;
     margin: 3vh 0;
     font-size: 0.8vw;
-    font-weight: bold;
+    font-weight: 800;
 }
 nav > #nav-info > p#nav-date{
     font-size: 1vw;
-    font-weight: bold;
+    font-weight: 800;
     top: 18vh;
     right: 7vw;
 	position: absolute;
@@ -113,25 +131,20 @@ nav > #nav-links > ul > li{
 nav > #nav-links > ul > li > a{
 	color: grey;
     font-size: 1.1vw;
-	font-weight: bold;
+	font-weight: 800;
 	transition: .3s ease;
 }
 nav > #nav-links > ul > li > a:hover{
-	color: #000;
+	color: rgb(35, 31, 32);
 	background: inherit;
 	transition: .3s ease;
 }
 
-footer{
-	background: url(../images/index/footer-bg.png);
-    background-repeat: no-repeat;
-    background-position: center;
-    background-size: 55vw;
-    background-position-y: -20vh;
-}
+
 footer > #social-media{
 	text-align: center;
     margin: 35vh auto 5vh;
+    padding-top: 8vh;
     width: 45vw;
 }
 footer > #social-media > img{
@@ -140,7 +153,7 @@ footer > #social-media > img{
 }
 footer > #social-media > div > div > a{
 	font-size: 1.5vw;
-	font-weight: bold;
+	font-weight: 800;
 	color: #000;
 	transition: .3s ease;
 }
@@ -165,19 +178,19 @@ footer > #info > h5{
 	color: grey;
     margin: 1vh 0;
     font-size: 1.3vw;
-    font-weight: bold;
+    font-weight: 800;
 }
 footer > #info > p{
 	color: grey;
     margin: 3vh 0;
     font-size: 0.8vw;
-    font-weight: bold;
+    font-weight: 800;
 }
 footer > #info > h4{
 	color: grey;
     margin: 10vh 0 0;
     font-size: 2vw;
-    font-weight: bold;
+    font-weight: 800;
 }
 footer > #info > h3{
 	color: grey;
@@ -186,8 +199,12 @@ footer > #info > h3{
 }
 
 footer > #links{
-	margin: 2vh auto;
     width: 80vw;
+	margin: 7vh auto 0;
+	padding-bottom: 15vh;
+}
+footer > #links > .row{
+	margin:0;
 }
 footer > #links > div > div > ul.link-list > .link-title{
 	margin-bottom: 4vh;
@@ -195,7 +212,7 @@ footer > #links > div > div > ul.link-list > .link-title{
 footer > #links > div > div > ul.link-list > .link-title > a{
 	color: grey;
 	font-size: 1.3vw;
-	font-weight: bold;
+	font-weight: 800;
 	transition: .3s ease;
 }
 footer > #links > div > div > ul.link-list > .link-title > a:hover{
@@ -210,6 +227,43 @@ footer > #links > div > div > ul.link-list > li > a{
 footer > #links > div > div > ul.link-list > li > a:hover{
 	color: #000;
 	transition: .3s ease;
+}
+
+footer.index{
+	background: url(../images/index/footer-bg.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 55vw;
+    background-position-y: -20vh;
+}
+footer.servicio{
+	background-color: rgb(35, 31, 32);
+}
+footer.servicio {
+	color: #fff;
+}
+footer.servicio > #social-media > img{
+	content: url(../images/corona-blanca.svg);
+}
+footer.servicio > #social-media > div > div > a,
+footer.servicio > #social-media > h6,
+footer.servicio > #info > h5,
+footer.servicio > #info > h3,
+footer.servicio > #info > p,
+footer.servicio > #info > h4,
+footer.servicio > #links > div > div > ul.link-list > .link-title > a,
+footer.servicio > #links > div > div > ul.link-list > li > a{
+	color: #fff;
+}
+
+footer.servicio > #social-media > div > div > a:hover,
+footer.servicio > #links > div > div > ul.link-list > .link-title > a:hover,
+footer.servicio > #links > div > div > ul.link-list > li > a:hover{
+	color: red;
+}
+
+footer.servicio.steps > #social-media{
+	margin-top: 0;
 }
 
 /*==========================*/
@@ -243,7 +297,7 @@ section#comofunciona{
     height: 75vh;
 }
 #comofunciona > div > #comofunciona-title > h4{
-	font-weight: bold;
+	font-weight: 800;
 	font-size: 3vw;
 }
 #comofunciona > div > #comofunciona-info{
@@ -256,7 +310,7 @@ section#comofunciona{
 	margin: 0;
 	font-size: 1vw;
 	text-align: right;
-	font-weight: bold;
+	font-weight: 800;
 }
 .comofunciona-paso > div.comofunciona-paso-info{
     width: 24vw;
@@ -266,10 +320,11 @@ section#comofunciona{
 .comofunciona-paso > div.comofunciona-paso-info > h5{
 	margin: 0;
 	font-size: 2vw;
-	font-weight: bold;
+	font-weight: 800;
 }
 .comofunciona-paso > div.comofunciona-paso-info > p{
 	margin: 0;
+	font-weight: 500;
 	font-size: 1.3vw;
 }
 .comofunciona-paso > div.comofunciona-paso-icono{
@@ -287,7 +342,7 @@ section#descuentos{
 }
 section#descuentos > h4{
 	font-size: 2.5vw;
-	font-weight: bold;
+	font-weight: 800;
 	margin-bottom: 13vh;
 }
 section#descuentos > div > #descuentos-title{
@@ -296,7 +351,7 @@ section#descuentos > div > #descuentos-title{
 	text-align: right;
 }
 section#descuentos > div > #descuentos-title > h5{
-	font-weight: bold;
+	font-weight: 800;
 	font-size: 1.6vw;
 }
 section#descuentos > div > .vertical-divider{
@@ -312,7 +367,7 @@ section#descuentos > div > #descuentos-descuentos{
 	text-align: left;
 }
 section#descuentos > div > #descuentos-descuentos > h5{
-	font-weight: bold;
+	font-weight: 800;
 	font-size: 1.6vw;
 	margin: 0.3vw 0;
 }
@@ -332,7 +387,7 @@ section#descuentos > #descuentos_arma-tu-plan > h5{
 	font-size: 3vw;
 	left: 9vw;
     position: absolute;
-	font-weight: bold;
+	font-weight: 800;
 	text-align: left;
 }
 section#descuentos > #descuentos_arma-tu-plan > #arma-tu-plan-planes{
@@ -363,14 +418,15 @@ section#descuentos > #descuentos_subtotal{
 section#descuentos > #descuentos_subtotal > div > div > h5,
 section#descuentos > #descuentos_subtotal > div > div > p{
 	display: inline-block;
+	font-weight: 500;
 	margin: 0;
 }
 section#descuentos > #descuentos_subtotal > div > div > h5{
-	font-weight: bold;
+	font-weight: 800;
 	font-size: 1.7vw;
 }
 section#descuentos > #descuentos_subtotal > div > div > p{
-	font-weight: bold;
+	font-weight: 800;
 	font-size: 1.7vw;
 }
 
@@ -384,19 +440,20 @@ section#descuentos > #descuentos_descuento{
 section#descuentos > #descuentos_descuento > div > div > h5,
 section#descuentos > #descuentos_descuento > div > div > p{
 	display: inline-block;
+	font-weight: 500;
 	margin: 0;
 }
 section#descuentos > #descuentos_descuento > div > div > h5{
-	font-weight: bold;
+	font-weight: 800;
 	font-size: 2.5vw;
 }
 section#descuentos > #descuentos_descuento > div > div > h6{
 	margin-top: 3.5vh;
-	font-weight: bold;
+	font-weight: 800;
 	font-size: 1.7vw;
 }
 section#descuentos > #descuentos_descuento > div > div > p{
-	font-weight: bold;
+	font-weight: 800;
 	font-size: 1.7vw;
 }
 
@@ -409,7 +466,7 @@ section#descuentos > #descuentos_total > #descuentos_descuento_lanzamiento{
     border-bottom: 0.2vh solid #000;
 }
 section#descuentos > #descuentos_total > #descuentos_descuento_lanzamiento > div > div > p{
-	font-weight: bold;
+	font-weight: 800;
 	font-size: 1.3vw;
 }
 section#descuentos > #descuentos_total > #descuentos_descuento_lanzamiento > div > div > p > span{
@@ -421,12 +478,12 @@ section#descuentos > #descuentos_total > #total{
     padding: 2vh 3vw 0;
 }
 section#descuentos > #descuentos_total > #total > div > div > h5{
-	font-weight: bold;
+	font-weight: 800;
 	font-size: 1.7vw;
     margin-top: 4vh;
 }
 section#descuentos > #descuentos_total > #total > div > div > p{
-	font-weight: bold;
+	font-weight: 800;
 	font-size: 1.3vw;
 	margin: 0;
 }
@@ -448,7 +505,7 @@ section#otras_opciones{
 }
 section#otras_opciones > h4{
 	font-size: 3vw;
-	font-weight: bold;
+	font-weight: 800;
 }
 section#otras_opciones > h5{
 	font-size: 2vw;
@@ -463,7 +520,7 @@ section#otras_opciones > .row > .col.m6 > .opcion{
 }
 section#otras_opciones > .row > .col.m6 > .opcion > h5{
 	font-size: 2vw;
-	font-weight: bold;
+	font-weight: 800;
     margin-bottom: 7vh;
 }
 section#otras_opciones > .row > .col.m6 > .opcion > img{
@@ -477,7 +534,7 @@ section#otras_opciones > .row > .col.m6 > .opcion > .btn-custom{
 }
 section#otras_opciones > .row > .col.m6 > .opcion > h4{
 	font-size: 2.2vw;
-	font-weight: bold;
+	font-weight: 800;
 }
 section#otras_opciones > .row > .col.m6 > .opcion-dos > img{
 	width: 9vw;
@@ -494,7 +551,7 @@ section#otras_opciones > .opcion-tres{
 }
 section#otras_opciones > .opcion-tres > h5{
 	font-size: 2vw;
-	font-weight: bold;
+	font-weight: 800;
     margin-bottom: 7vh;
 }
 section#otras_opciones > .opcion-tres > img{
@@ -509,7 +566,7 @@ section#otras_opciones > .opcion-tres > .btn-custom{
 }
 section#otras_opciones > .opcion-tres > h4{
 	font-size: 2.2vw;
-	font-weight: bold;
+	font-weight: 800;
 }
 
 section#otras_opciones > #especifico > h5{
@@ -517,7 +574,7 @@ section#otras_opciones > #especifico > h5{
 }
 section#otras_opciones > #especifico > h4{
     font-size: 3.5vw;
-    font-weight: bold;
+    font-weight: 800;
 }
 section#otras_opciones > #especifico > .btn-custom{
     display: block;
@@ -526,3 +583,323 @@ section#otras_opciones > #especifico > .btn-custom{
     font-size: 1.5vw;
 }
 /*/Otras opciones Section*/
+/*==========================*/
+/*          STEPS           */
+/*==========================*/
+
+/*========= Step 1 =========*/
+#steps{
+	text-align: center;
+	margin: 10vh auto;
+	width: 40vw;
+}
+#steps > .step{
+    width: 2.5vw;
+    height: 5vh;
+    line-height: 5vh;
+	position: absolute;
+    display: inline-block;
+    font-weight: 500;
+	color: #fff;
+    background: grey;
+}
+#steps > .step.active{
+	background: rgb(35, 31, 32);
+}
+#steps > .step.one{
+	margin-left: -2.5vw;
+}
+#steps > .step.two{
+	margin-left: -1.5vw;
+}
+#steps > .step-divider{
+	display: inline-block;
+	height: 2px;
+	margin-top: 2.5vh;
+	z-index: -1;
+	width: 10vw;
+	background: #000;
+}
+#steps > p{
+	font-size: 1.5vw;
+	font-weight: 500;
+}
+
+#form-paso-one{
+	text-align: center;
+    margin: 20vh auto 3vh;
+    width: 90vw;
+}
+.paso-input{
+	padding: 0 1vw !important;
+	/*margin-top: 3vh;*/
+}
+.paso-input.more-margin > h5{
+	margin-top: 15vh;
+}
+.paso-input > h5{
+	color: rgb(35, 31, 32);
+	font-size: 2.5vw;
+	font-weight: 800;
+	margin-top: 7vh;
+}
+.paso-input > p{
+	color: rgb(35, 31, 32);
+	font-size: 1.4vw;
+	margin-top: 0;
+	font-weight: 500;
+}
+.paso-input > input{
+	width: 100% !important;
+	text-align: center;
+	border-bottom: 2px solid rgb(35, 31, 32) !important;
+}
+input:not([type]):focus:not([readonly]), input[type=text]:not(.browser-default):focus:not([readonly]), input[type=password]:not(.browser-default):focus:not([readonly]), input[type=email]:not(.browser-default):focus:not([readonly]), input[type=url]:not(.browser-default):focus:not([readonly]), input[type=time]:not(.browser-default):focus:not([readonly]), input[type=date]:not(.browser-default):focus:not([readonly]), input[type=datetime]:not(.browser-default):focus:not([readonly]), input[type=datetime-local]:not(.browser-default):focus:not([readonly]), input[type=tel]:not(.browser-default):focus:not([readonly]), input[type=number]:not(.browser-default):focus:not([readonly]), input[type=search]:not(.browser-default):focus:not([readonly]), textarea.materialize-textarea:focus:not([readonly]) {
+    -webkit-box-shadow: 0 1px 0 0 grey;
+    box-shadow: 0 1px 0 0 grey;
+}
+#form-paso-one > form > #paraquien{
+	text-align: center;
+	margin: 15vh 0;
+}
+#form-paso-one > form > #paraquien > h5{
+	color: rgb(35, 31, 32);
+	font-size: 2.5vw;
+	font-weight: 800;
+    margin-bottom: 10vh;
+}
+#form-paso-one > form > #paraquien > div > div{
+	text-align: center;
+}
+#form-paso-one > form > #paraquien > div > div > img{
+	height: 20vh;
+}
+#form-paso-one > form > #paraquien > div > div > p{
+	font-weight: 400;
+	font-size: 1.5vw;
+}
+#form-paso-one > form > #btns{
+	margin: 25vh auto 0;
+    width: 30vw;
+}
+
+.paso-inputs-checkboxes{
+	margin-top: 4vh;
+}
+.paso-inputs-checkboxes > p{
+	display: inline-block;
+	margin: 0 1vw;
+	font-weight: 500;
+	font-size: 1.5vw;
+}
+.paso-inputs-checkboxes > input[type=text]{
+	width: 20vw;
+	height: 3vh;
+	border-bottom: 2px solid rgb(35, 31, 32) !important; 
+}
+
+/*========= Step 2 =========*/
+#form-paso-two{
+	text-align: center;
+    margin: 20vh auto 3vh;
+    width: 90vw;
+}
+.paso-title > h5{
+	color: rgb(35, 31, 32);
+	font-size: 2.5vw;
+	font-weight: 800;
+	margin-top: 7vh;
+}
+.paso-title > p{
+	color: rgb(35, 31, 32);
+	font-size: 1.4vw;
+	margin-top: 0;
+	font-weight: 500;
+}
+#form-paso-two > form > #paso-two-articles{
+	margin-top: 15vh;
+}
+#form-paso-two > form > #paso-two-articles > .row{
+	margin-bottom: 5vh;
+}
+#form-paso-two > form > #paso-two-articles > div.row > div > .paso-two-article{
+    padding-top: 3vh;
+	width: 18vw;
+    height: 65vh;
+    margin: auto;
+    color: rgb(35, 31, 32);
+    text-align: center;
+}
+#form-paso-two > form > #paso-two-articles > div.row > div > .paso-two-article > img{
+	width: auto;
+    height: 25vh;
+}
+#form-paso-two > form > #paso-two-articles > div.row > div > .paso-two-article > h5{
+	font-weight: 800;
+	font-size: 1.7vw;
+	margin-top: 8vh;
+	margin-bottom: 0;
+}
+#form-paso-two > form > #paso-two-articles > div.row > div > .paso-two-article > a{
+	color: rgb(35, 31, 32);
+	font-size: 1.3vw;
+	text-decoration: underline;
+}
+#form-paso-two > form > #paso-two-articles > div.row > div > .paso-two-article > p{
+	font-weight: 600;
+	font-size: 2vw;
+	margin-bottom: 0;
+	padding-bottom: 1vh;
+	border-bottom: 1px solid;
+}
+#form-paso-two > form > #paso-two-articles > div.row > div > .paso-two-article > .cantidad{
+	text-align: center;
+}
+#form-paso-two > form > #paso-two-articles > div.row > div > .paso-two-article > .cantidad > .signo{
+	font-weight: 600;
+	color: rgb(35, 31, 32);
+	display: inline-block;
+	border: 1px solid;
+	border-radius: 50%;
+	width: 2vw;
+	height: 4vh;
+	line-height: 3vh;
+	font-size: 2vw;
+}
+#form-paso-two > form > #paso-two-articles > div.row > div > .paso-two-article > .cantidad > p{
+	font-weight: 600;
+	display: inline-block;
+	margin: 1.5vh 1.5vw 0;
+	font-size: 2vw;
+}
+#form-paso-two > form > #btns{
+	margin: 25vh auto 0;
+    width: 30vw;
+}
+.modal.paso_2{
+	height: 70vh;
+}
+.modal.paso_2::-webkit-scrollbar {
+    width: 9px;
+}
+.modal.paso_2::-webkit-scrollbar-thumb {
+    -webkit-border-radius: 5px;
+    border-radius: 5px;
+    background-color: rgb(35, 31, 32);
+}
+.modal.paso_2::-webkit-scrollbar-track {
+    background: rgba(0,0,0,.2);
+    -webkit-border-radius: 5px;
+    border-radius: 5px;
+}
+.modal.paso_2 > .modal-content{
+	width: 27vw;
+    margin: auto;
+}
+.modal.paso_2 > .modal-content > h5{
+	margin: 5vh 0 8vh;
+	font-weight: 800;
+	font-size: 2vw;
+	font-family: 'Open sans'
+}
+.modal.paso_2 > .modal-footer > img{
+	width: 5vw;
+}
+
+/*=================================*/
+/*            SERVICIOS            */
+/*=================================*/
+
+/*======== Diseño =======*/
+section#jumbotron.servicio.diseño{
+	margin: 2vh auto 25vh;
+	width: 50vw;
+	text-align: center;
+}
+section#jumbotron.servicio.diseño > h2{
+	margin: 13vh 0 0;
+	font-size: 13vw;
+	font-weight: 800;
+}
+section#jumbotron.servicio.diseño > h3{
+	margin: 0 0 15vh;
+	font-size: 3vw;
+	font-weight: 100;
+}
+section#jumbotron.servicio.diseño > img{
+	width: 40vw;
+}
+section#jumbotron.servicio.diseño > h4{
+	margin: 0 0 5vh;
+	font-size: 2.7vw;
+	font-weight: 800;
+}
+section#jumbotron.servicio.diseño > a.btn-custom{
+	display: block;
+	width: 20vw;
+	margin: auto;
+}
+section#jumbotron.servicio.diseño > p{
+	margin: 3vh 0 0;
+    font-size: 1.6vw;
+    line-height: 3vh;
+    font-weight: 500;
+}
+
+section#parallax{
+    height: 65vh;
+	text-align: center;
+}
+section#parallax > .parallax-container{
+	padding: 6vh 8vw;
+	height: 100%;
+}
+section#parallax > .parallax-container > .row > div.col.m4{
+	color: #fff;
+	padding: 0 5.2vw;
+}
+section#parallax > .parallax-container > .row > div > h5{
+	font-size: 1.5vw;
+	font-weight: 800;
+	margin-bottom: 2vh;
+}
+section#parallax > .parallax-container > .row > div > p{
+    font-size: 1.5vw;
+    font-weight: 500;
+    line-height: 3vh;
+    margin-bottom: 7vh;
+}
+section#parallax > .parallax-container > .row > div > img{
+    width: 4vw;
+}
+section#parallax > .parallax-container > a.btn-custom{
+	background-color: #fff;
+    color: rgb(35, 31, 32);
+    font-size: 2vw;
+    display: block;
+    margin: 6vh auto;
+    width: 23vw;
+    /*transition: .3s ease;*/
+}
+section#parallax > .parallax-container > a.btn-custom:hover{
+	/*transition: .3s ease;*/
+}
+
+section#otras_opciones.servicio.diseño{
+	text-align: center;
+}
+section#otras_opciones.servicio.diseño > h4{
+	font-size: 2.7vw;
+	font-weight: 800;
+}
+section#otras_opciones.servicio.diseño > p{
+	margin-top: 0;
+	margin-bottom: 13vh;
+	font-weight: 500;
+	font-size: 1.6vw;
+    line-height: 3vh;
+}
+section#otras_opciones.servicio.diseño > #especifico > a.btn-custom{
+    width: 53vw;
+    font-size: 2vw;
+}
