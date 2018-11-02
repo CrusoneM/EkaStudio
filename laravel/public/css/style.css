@@ -25,13 +25,17 @@ body{
     color: #fff;
     border-radius: 0;
     font-weight: 500;
-    padding: 1vh 2vw;
+    padding: 1.7vh 2vw;
     font-size: 2vw;
     display: inline-block;
     transition: .3s ease;
 }
 .btn-custom-btn:hover{
 	background-color: #353535;
+	transition: .3s ease;
+}
+.btn-custom-btn:focus {
+    background-color: #353535;
 	transition: .3s ease;
 }
 
@@ -97,6 +101,7 @@ nav > a > #nav-logo{
 	width: 6.5vw;
 }
 nav > h3.title{
+	display: none;
 	font-weight: 800;
     font-size: 4vw;
     color: #000;
@@ -292,12 +297,6 @@ footer.servicio > #links > div > div > ul.link-list > li > a{
 	color: #fff;
 }
 
-footer.servicio > #social-media > div > div > a:hover,
-footer.servicio > #links > div > div > ul.link-list > .link-title > a:hover,
-footer.servicio > #links > div > div > ul.link-list > li > a:hover{
-	color: red;
-}
-
 footer.servicio.steps > #social-media{
 	margin-top: 0;
 }
@@ -305,7 +304,10 @@ footer.servicio.steps > #social-media{
 /*==========================*/
 /*          INDEX           */
 /*==========================*/
-
+#main{
+	margin: 0 auto;
+    width: 80vw;
+}
 /*========= Main ===========*/
 /*jumbotron section*/
 section#jumbotron{
@@ -319,7 +321,7 @@ section#jumbotron > h3{
 	margin: 0 0 3vh;
 }
 section#jumbotron > img{
-	width: 100vw;
+	width: 100%;
 }
 section#jumbotron > img#jumbotron-mobile{
 	display: none;
@@ -412,7 +414,7 @@ section#descuentos > div > .vertical-divider{
 	width: 0.1vw;
     height: 15vh;
     position: absolute;
-    margin-left: 50%;
+    margin-left: 41%;
     background: #000;
 }
 section#descuentos > div > #descuentos-descuentos{
@@ -430,19 +432,19 @@ section#descuentos > div > #descuentos-descuentos > h5 > span{
 }
 
 section#descuentos > #descuentos_arma-tu-plan{
-	width: 88vw;
+	width: 100%;
 	min-height: 66vh;
 	margin: 20vh auto 0;
     padding: 6vh 3vw 5vh;
 }
 section#descuentos > #descuentos_arma-tu-plan > h5{
-	padding-top: 20vh;
-	display: inline-block;
-	font-size: 3vw;
-	left: 9vw;
+	padding-top: 24vh;
+    display: inline-block;
+    font-size: 2.5vw;
+    left: 10vw;
     position: absolute;
-	font-weight: 800;
-	text-align: left;
+    font-weight: 800;
+    text-align: left;
 }
 section#descuentos > #descuentos_arma-tu-plan > #arma-tu-plan-planes{
 	text-align: right;
@@ -459,11 +461,15 @@ section#descuentos > #descuentos_arma-tu-plan > #arma-tu-plan-planes > .arma-tu-
 	width: 100%;
 }
 section#descuentos > #descuentos_arma-tu-plan > #arma-tu-plan-planes > .arma-tu-plan_plan > .arma-tu-plan_plan-checkbox{
-	margin: 10vh 0 0;
+	margin: 10vh auto 0;
+    width: 3vw;
+}
+section#descuentos > #descuentos_arma-tu-plan > #arma-tu-plan-planes > .arma-tu-plan_plan > .arma-tu-plan_plan-checkbox > img{
+    width: 100%;
 }
 
 section#descuentos > #descuentos_subtotal{
-    width: 88vw;
+    width: 100%;
     margin: 7vh auto 0;
     padding: 0vh 3vw;
     height: 11vh;
@@ -485,7 +491,7 @@ section#descuentos > #descuentos_subtotal > div > div > p{
 }
 
 section#descuentos > #descuentos_descuento{
-    width: 88vw;
+    width: 100%;
     margin: 7vh auto 0;
     padding: 0vh 3vw;
     height: 11vh;
@@ -499,7 +505,7 @@ section#descuentos > #descuentos_descuento > div > div > p{
 }
 section#descuentos > #descuentos_descuento > div > div > h5{
 	font-weight: 800;
-	font-size: 2.5vw;
+	font-size: 2vw;
 }
 section#descuentos > #descuentos_descuento > div > div > h6{
 	margin-top: 3.5vh;
@@ -512,7 +518,7 @@ section#descuentos > #descuentos_descuento > div > div > p{
 }
 
 section#descuentos > #descuentos_total{
-    width: 88vw;
+    width: 100%;
     margin: 7vh auto 0;
 }
 section#descuentos > #descuentos_total > #descuentos_descuento_lanzamiento{
@@ -540,7 +546,6 @@ section#descuentos > #descuentos_total > #total{
 section#descuentos > #descuentos_total > #total > div > div > h5{
 	font-weight: 700;
 	font-size: 1.7vw;
-    margin-top: 4vh;
 }
 section#descuentos > #descuentos_total > #total > div > div > p{
 	font-weight: 800;
@@ -696,7 +701,7 @@ section#otras_opciones > #especifico > .btn-custom.mobile{
 #form-paso-one{
 	text-align: center;
     margin: 20vh auto 3vh;
-    width: 90vw;
+    width: 100%;
 }
 .paso-input{
 	padding: 0 1vw !important;
@@ -720,6 +725,9 @@ section#otras_opciones > #especifico > .btn-custom.mobile{
 .paso-input > input{
 	width: 100% !important;
 	text-align: center;
+	color: rgb(35, 31, 32);
+    font-size: 1.4vw !important;
+    /*font-weight: 500;*/
 	border-bottom: 2px solid rgb(35, 31, 32) !important;
 }
 input:not([type]):focus:not([readonly]), input[type=text]:not(.browser-default):focus:not([readonly]), input[type=password]:not(.browser-default):focus:not([readonly]), input[type=email]:not(.browser-default):focus:not([readonly]), input[type=url]:not(.browser-default):focus:not([readonly]), input[type=time]:not(.browser-default):focus:not([readonly]), input[type=date]:not(.browser-default):focus:not([readonly]), input[type=datetime]:not(.browser-default):focus:not([readonly]), input[type=datetime-local]:not(.browser-default):focus:not([readonly]), input[type=tel]:not(.browser-default):focus:not([readonly]), input[type=number]:not(.browser-default):focus:not([readonly]), input[type=search]:not(.browser-default):focus:not([readonly]), textarea.materialize-textarea:focus:not([readonly]) {
@@ -766,11 +774,15 @@ input:not([type]):focus:not([readonly]), input[type=text]:not(.browser-default):
 	border-bottom: 2px solid rgb(35, 31, 32) !important; 
 }
 
+#obligatorio > h5{
+	font-size: 1.5vw;
+}
+
 /*========= Step 2 =========*/
 #form-paso-two{
 	text-align: center;
     margin: 20vh auto 3vh;
-    width: 90vw;
+    width: 100%;
 }
 .paso-title > h5{
 	color: rgb(35, 31, 32);
@@ -794,7 +806,7 @@ input:not([type]):focus:not([readonly]), input[type=text]:not(.browser-default):
     padding-top: 3vh;
 	width: 18vw;
     min-height: 65vh;
-    margin: auto;
+    margin: 0 auto 10vh;
     color: rgb(35, 31, 32);
     text-align: center;
 }
@@ -821,12 +833,22 @@ input:not([type]):focus:not([readonly]), input[type=text]:not(.browser-default):
 	padding-bottom: 1vh;
 	border-bottom: 1px solid;
 }
+#form-paso-two > form > #paso-two-articles > div.row > div > .paso-two-article > p > input{
+	font-weight: 600;
+	font-size: 2vw;
+	margin-bottom: 0;
+	padding-bottom: 1vh;
+	border-bottom: 0;
+	text-align: center;
+	color: rgb(35, 31, 32);
+}
 #form-paso-two > form > #paso-two-articles > div.row > div > .paso-two-article > .cantidad{
 	text-align: center;
 }
 #form-paso-two > form > #paso-two-articles > div.row > div > .paso-two-article > .cantidad > .signo{
     display: inline-block;
     width: 2vw;
+    cursor: pointer;
 }
 #form-paso-two > form > #paso-two-articles > div.row > div > .paso-two-article > .cantidad > .signo > img{
     width: 100%;
@@ -836,6 +858,14 @@ input:not([type]):focus:not([readonly]), input[type=text]:not(.browser-default):
 	display: inline-block;
 	margin: 1.5vh 1.5vw 0;
 	font-size: 2vw;
+}
+#form-paso-two > form > #paso-two-articles > div.row > div > .paso-two-article > .cantidad > p > input{
+	border: 0;
+    width: 2vw;
+    display: inline-block;
+    text-align: center;
+    font-size: 2vw;
+    font-weight: 600;
 }
 #form-paso-two > form > #btns{
 	margin: 25vh auto 0;
@@ -874,7 +904,7 @@ input:not([type]):focus:not([readonly]), input[type=text]:not(.browser-default):
 #form-paso-three{
 	text-align: center;
     margin: 20vh auto 3vh;
-    width: 90vw;
+    width: 100%;
 }
 #form-paso-three > form > #plan-final{
 	min-height: 90vh;
@@ -916,6 +946,16 @@ input:not([type]):focus:not([readonly]), input[type=text]:not(.browser-default):
 	margin: 0;
 	display: inline-block;
 }
+#form-paso-three > form > #plan-final > .plan-final-plan > .plan-final-plan-info > .cantidad > .numero > p > input{
+	border-bottom: 0;
+	color: #272727;
+    text-align: center;
+    display: inline-block;
+    width: 3vw;
+    font-size: 2vw;
+    font-weight: 700;
+    margin-bottom: 0;
+}
 #form-paso-three > form > #plan-final > .plan-final-plan > .plan-final-plan-info > .cantidad > .numero > a{
     color: rgb(35, 31, 32);
     font-size: 1vw;
@@ -926,20 +966,30 @@ input:not([type]):focus:not([readonly]), input[type=text]:not(.browser-default):
 #form-paso-three > form > #plan-final > .plan-final-plan > .plan-final-plan-info > .cantidad > .numero > a > i{
     font-size: 2vw;
     font-weight: 800;
+    cursor: pointer;
 }
 #form-paso-three > form > #plan-final > .plan-final-plan > .plan-final-plan-info > .cantidad > .numero > a.flecha-up{
     margin-top: 0vh;
 }
 #form-paso-three > form > #plan-final > .plan-final-plan > .plan-final-plan-info > .cantidad > .numero > a.flecha-down{
-    margin-top: 2vh;
+    margin-top: 3vh;
 }
 #form-paso-three > form > #plan-final > .plan-final-plan > .plan-final-plan-info > .cantidad > a{
 	color: rgb(35, 31, 32);
 	font-size: 0.9vw;
+	cursor: pointer;
 }
 #form-paso-three > form > #plan-final > .plan-final-plan > .plan-final-plan-info > h5{
 	font-weight: 700;
     font-size: 2.3vw;
+}
+#form-paso-three > form > #plan-final > .plan-final-plan > .plan-final-plan-info > h5 > input{
+	border-bottom: 0;
+    color: #272727;
+    text-align: center;
+    display: inline-block;
+    font-size: 2.3vw;
+    font-weight: 700;
 }
 #form-paso-three > form > #subtotal{
 	margin: 10vh auto 0;
@@ -951,6 +1001,16 @@ input:not([type]):focus:not([readonly]), input[type=text]:not(.browser-default):
 	font-size: 1.7vw;
 	line-height: 6vh;
 	font-weight: 700;
+	margin-top: 1.5vh;
+}
+#form-paso-three > form > #subtotal > div > div > h5 > input{
+	border: 0;
+    margin: 0;
+    display: inline-block;
+    text-align: center;
+    font-size: 1.7vw;
+    font-weight: 700;
+    color: rgb(35, 31, 32);
 }
 #form-paso-three > form > #subtotal > div > div > p{
 	text-align: right;
@@ -958,6 +1018,15 @@ input:not([type]):focus:not([readonly]), input[type=text]:not(.browser-default):
 	margin: 0;
 	font-size: 1.7vw;
 	font-weight: 700;
+}
+#form-paso-three > form > #subtotal > div > div > p > input{
+	border: 0;
+    margin: 0;
+    display: inline-block;
+    text-align: right;
+    font-size: 1.7vw;
+    font-weight: 700;
+    color: rgb(35, 31, 32);
 }
 #form-paso-three > form > #descuento{
 	margin: 5vh auto;
@@ -970,7 +1039,27 @@ input:not([type]):focus:not([readonly]), input[type=text]:not(.browser-default):
 	line-height: 10vh;
 	font-weight: 800;
 }
+#form-paso-three > form > #descuento > div > div > h5 > input{
+	color: rgb(35, 31, 32);
+	border: 0;
+    margin: 0;
+    display: inline-block;
+	font-size: 2.3vw;
+	line-height: 10vh;
+	font-weight: 800;
+}
 #form-paso-three > form > #descuento > div > div > p{
+	text-align: right;
+	padding-right: 6vw;
+	margin: 0;
+	font-size: 1.7vw;
+	font-weight: 700;
+}
+#form-paso-three > form > #descuento > div > div > p > input{
+	color: rgb(35, 31, 32);
+	border: 0;
+    margin: 0;
+    display: inline-block;
 	text-align: right;
 	padding-right: 6vw;
 	margin: 0;
@@ -980,12 +1069,14 @@ input:not([type]):focus:not([readonly]), input[type=text]:not(.browser-default):
 #form-paso-three > form > #total{
 	margin: 5vh auto;
 	width: 50vw;
-	height: 30vh;
-	line-height: 15vh;
+	/*height: 30vh;*/
+	height: 14vh;
+	line-height: 14vh;
 }
 #form-paso-three > form > #total > div#lanzamiento{
 	border-bottom: 1px solid;
     height: 14vh;
+    display: none;
 }
 #form-paso-three > form > #total > div#lanzamiento > div > div > h5{
 	font-size: 1.7vw;
@@ -996,12 +1087,14 @@ input:not([type]):focus:not([readonly]), input[type=text]:not(.browser-default):
 	text-align: right;
 	padding-right: 6vw;
 	font-size: 1.7vw;
-	height: 7vh;
-	line-height: 8vh;
+	line-height: 14vh;
 	font-weight: 700;
 }
 #form-paso-three > form > #total > div#total-total{
     height: 14vh;
+}
+#form-paso-three > form > #total > div#total-total > .row{
+    margin: 0;
 }
 #form-paso-three > form > #total > div#total-total > div > div > h5{
 	text-align: left;
@@ -1014,13 +1107,29 @@ input:not([type]):focus:not([readonly]), input[type=text]:not(.browser-default):
 	text-align: right;
     padding-right: 6vw;
     font-size: 3vw;
-    height: 6vh;
     margin-top: 0;
     margin-bottom: 0;
     line-height: 12vh;
     font-weight: 800;
 }
+#form-paso-three > form > #total > div#total-total > div > div > p > input{
+	color: rgb(35, 31, 32);
+	border: 0;
+    margin: 0;
+    display: inline-block;
+	text-align: right;
+    padding-right: 6vw;
+    font-size: 3vw;
+    margin-top: 0;
+    margin-bottom: 0;
+    font-weight: 800;
+}
 #form-paso-three > form > #total > div#total-total > div > div > p.ahorro{
+	font-size: 1.3vw;
+	margin-top: 0;
+	font-weight: 200;
+}
+#form-paso-three > form > #total > div#total-total > div > div > p.ahorro > span > input{
 	font-size: 1.3vw;
 	margin-top: 0;
 	font-weight: 200;

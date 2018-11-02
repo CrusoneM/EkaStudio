@@ -5,7 +5,7 @@
 	<meta name="description" content=" ">
 	<meta name="viewport" content="user-scalable=no, width=device-width, initial-scale=1, maximum-scale=1">
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
-	<link rel="shortcut icon" href="/images/logo-negro.ico" type="image/x-icon">
+	<link rel="shortcut icon" href="images/logo-negro.ico" type="image/x-icon">
 
     <title>EKA Studios @yield('title')</title>
 
@@ -15,15 +15,18 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
     <!-- Custom css  -->
-    <link href="/css/style.css" rel="stylesheet">
+    <link href="{{ URL::asset('css/style.css') }}" rel="stylesheet">
     <!-- Medias css  -->
-    <link href="/css/medias.css" rel="stylesheet">
+    <link href="{{ URL::asset('css/medias.css') }}" rel="stylesheet">
+
+    <!-- Jquery -->
+	<script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
 </head>
 <body>
 	<header>
 		<nav class="nav-extended align-center">
 			<a href="#" data-target="mobile-demo" class="sidenav-trigger"><i class="material-icons">menu</i></a>
-			<a href="/"><img src="/images/logo.svg" id="nav-logo" alt="Logo"></a>
+			<a href="{{ url('/') }}"><img src="{{ URL::asset('images/logo.svg') }}" id="nav-logo" alt="Logo"></a>
 			<h3 class="title">BIENVENIDOS A EKA STUDIO</h3>
 			<div id="nav-info">
 				<h2>BIENVENIDOS A EKA STUDIO</h2>
@@ -33,19 +36,19 @@
 			</div>
 			<div id="nav-links">
 				<ul>
-				    <li><a href="#">ACERCA DE EKA</a></li>
-				    <li><a href="#">SERVICIOS</a></li>
+				    <li><a href="{{ url('about') }}">ACERCA DE EKA</a></li>
+				    <li><a href="{{ url('about/#our-services') }}">SERVICIOS</a></li>
 				    <li><a href="#">PROYECTOS</a></li>
-				    <li><a href="#">CONTACTO</a></li>
+				    <li><a href="{{ url('contact') }}">CONTACTO</a></li>
 				</ul>
 			</div>
 		</nav>
 
 		<ul class="sidenav" id="mobile-demo">
-			<li><a href="#">ACERCA DE EKA</a></li>
-		    <li><a href="#">SERVICIOS</a></li>
+			<li><a href="{{ url('about') }}">ACERCA DE EKA</a></li>
+		    <li><a href="{{ url('about/#our-services') }}">SERVICIOS</a></li>
 		    <li><a href="#">PROYECTOS</a></li>
-		    <li><a href="#">CONTACTO</a></li>
+		    <li><a href="{{ url('contact') }}">CONTACTO</a></li>
 		    <div id="social-media">
 		    	<ul>
 		    	    <li><a href="#">FACEBOOK</a></li>
@@ -62,11 +65,11 @@
 
 	<footer class="@yield('footer-class')">
 		<div id="social-media">
-			<img src="/images/corona.svg" alt="corona">
+			<img src="{{ URL::asset('images/corona.svg') }}" alt="corona">
 			<div class="row">
-				<div class="col m4"><a href="#">FACEBOOK</a></div>
-				<div class="col m4"><a href="#">INSTAGRAM</a></div>
-				<div class="col m4"><a href="#">LINKEDIN</a></div>
+				<div class="col m4"><a href="https://www.facebook.com/ekastudio13/">FACEBOOK</a></div>
+				<div class="col m4"><a href="https://www.instagram.com/eka.studio/?hl=en">INSTAGRAM</a></div>
+				<div class="col m4"><a href="https://www.linkedin.com/company/eka-studio/">LINKEDIN</a></div>
 			</div>
 			<h6>SÍGUENOS EN NUESTRAS REDES SOCIALES</h6>
 		</div>
@@ -89,7 +92,7 @@
 				<div class="col m3">
 					<ul class="link-list">
 					    <li class="link-title"><a href="#">Diseño Gráfico</a></li>
-					    <li><a href="{{ url('/servicio/diseño/logotipo') }}">Logotipo</a></li>
+					    <li><a href="{{ url('servicio/diseno/logotipo') }}">Logotipo</a></li>
 					    <li><a href="#">Aplicaciones de Marca</a></li>
 					    <li><a href="#">Señalización</a></li>
 					    <li><a href="#">Manual de Marca</a></li>
@@ -114,8 +117,6 @@
 		</div>
 	</footer>
 
-	<!-- Jquery -->
-	<script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
 	<!-- Materialize JavaScript -->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
     <script>

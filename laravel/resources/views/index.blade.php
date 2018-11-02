@@ -3,8 +3,8 @@
 @section('content')
 
 		<section id="jumbotron">
-			<img src="/images/index/header.png" alt="header">
-			<img src="/images/index/header_mobile.png" alt="header" id="jumbotron-mobile">
+			<img src="images/index/header.jpg" alt="header">
+			<img src="images/index/header_mobile.jpg" alt="header" id="jumbotron-mobile">
 		</section>
 
 		<section id="comofunciona">
@@ -21,7 +21,7 @@
 							<p>ASÍ SABREMOS SI SOLO NECESITAS UN LOGOTIPO O UNA ESTRATEGIA ESPECÍFICA.</p>
 						</div>
 						<div class="comofunciona-paso-icono">
-							<img src="/images/index/como_funciona_icono_1.svg" alt="icono">
+							<img src="images/index/como_funciona_icono_1.svg" alt="icono">
 						</div>
 					</div>
 				</div>
@@ -33,7 +33,7 @@
 							<p>ARMA UN PLAN DE ACUERDO A TUS REQUERIMIENTOS Y OBTEN TU PRESUPUESTO AL INSTANTE. <b>¡ES INMEDIATO!</b></p>
 						</div>
 						<div class="comofunciona-paso-icono">
-							<img src="/images/index/como_funciona_icono_2.svg" alt="icono">
+							<img src="images/index/como_funciona_icono_2.svg" alt="icono">
 						</div>
 					</div>
 				</div>
@@ -45,11 +45,11 @@
 							<p>¡TE ATENDEREMOS EL MISMO DÍA! NUESTRO HORARIO ES DE 9.00-18.00</p>
 						</div>
 						<div class="comofunciona-paso-icono">
-							<img src="/images/index/como_funciona_icono_3.svg" alt="icono">
+							<img src="images/index/como_funciona_icono_3.svg" alt="icono">
 						</div>
 					</div>
 				</div>
-				<a href="{{ url('/paso-1') }}" class="btn-custom">¡ARMA UN PLAN A TU MEDIDA AHORA MISMO!</a>
+				<a href="{{ url('paso-1') }}" class="btn-custom">¡ARMA UN PLAN A TU MEDIDA AHORA MISMO!</a>
 			</div>
 		</section>
 
@@ -72,58 +72,33 @@
 				<h5>ARMA <br>TU PLAN</h5>
 				<div id="arma-tu-plan-planes">
 					<div class="arma-tu-plan_plan">
-						<div class="arma-tu-plan_plan-img"><img src="/images/index/arma-tu-plan-1.svg" alt="arma-tu-plan-icon"></div>
+						<div class="arma-tu-plan_plan-img"><img src="images/index/arma-tu-plan-1.svg" alt="arma-tu-plan-icon"></div>
 						<div class="arma-tu-plan_plan-checkbox">
-							<p>
-						      <label>
-						        <input type="checkbox" class="filled-in" />
-						        <span></span>
-						      </label>
-						    </p>
+							<img src="images/index/checkbox_check.svg" alt="checkbox_check">
 						</div>
 					</div>
 					<div class="arma-tu-plan_plan">
-						<div class="arma-tu-plan_plan-img"><img src="/images/index/arma-tu-plan-2.png" alt="arma-tu-plan-icon"></div>
+						<div class="arma-tu-plan_plan-img"><img src="images/index/arma-tu-plan-2.png" alt="arma-tu-plan-icon"></div>
 						<div class="arma-tu-plan_plan-checkbox">
-							<p>
-						      <label>
-						        <input type="checkbox" class="filled-in" />
-						        <span></span>
-						      </label>
-						    </p>
+							<img src="images/index/checkbox_check.svg" alt="checkbox_check">
 						</div>
 					</div>
 					<div class="arma-tu-plan_plan">
-						<div class="arma-tu-plan_plan-img"><img src="/images/index/arma-tu-plan-3.png" alt="arma-tu-plan-icon"></div>
+						<div class="arma-tu-plan_plan-img"><img src="images/index/arma-tu-plan-3.png" alt="arma-tu-plan-icon"></div>
 						<div class="arma-tu-plan_plan-checkbox">
-							<p>
-						      <label>
-						        <input type="checkbox" class="filled-in" />
-						        <span></span>
-						      </label>
-						    </p>
+							<img src="images/index/checkbox_check.svg" alt="checkbox_check">
 						</div>
 					</div>
 					<div class="arma-tu-plan_plan">
-						<div class="arma-tu-plan_plan-img"><img src="/images/index/arma-tu-plan-4.png" alt="arma-tu-plan-icon"></div>
+						<div class="arma-tu-plan_plan-img"><img src="images/index/arma-tu-plan-4.png" alt="arma-tu-plan-icon"></div>
 						<div class="arma-tu-plan_plan-checkbox">
-							<p>
-						      <label>
-						        <input type="checkbox" class="filled-in" />
-						        <span></span>
-						      </label>
-						    </p>
+							<img src="images/index/checkbox.svg" alt="checkbox">
 						</div>
 					</div>
 					<div class="arma-tu-plan_plan">
-						<div class="arma-tu-plan_plan-img"><img src="/images/index/arma-tu-plan-5.png" alt="arma-tu-plan-icon"></div>
+						<div class="arma-tu-plan_plan-img"><img src="images/index/arma-tu-plan-5.png" alt="arma-tu-plan-icon"></div>
 						<div class="arma-tu-plan_plan-checkbox">
-							<p>
-						      <label>
-						        <input type="checkbox" class="filled-in" />
-						        <span></span>
-						      </label>
-						    </p>
+							<img src="images/index/checkbox.svg" alt="checkbox">
 						</div>
 					</div>
 				</div>
@@ -152,16 +127,6 @@
 				</div>
 			</div>
 			<div id="descuentos_total" class="z-depth-4">
-				<div id="descuentos_descuento_lanzamiento">
-					<div class="row">
-						<div class="col m8 left-align">
-							<p>DESCUENTO POR LANZAMIENTO <span>&nbsp;(TIEMPO LIMITADO)</span></p>
-						</div>
-						<div class="col m4 right-align">
-							<p>-$ 850</p>
-						</div>
-					</div>
-				</div>
 				<div id="total">
 					<div class="row">
 						<div class="col m6 left-align">
@@ -169,7 +134,6 @@
 						</div>
 						<div class="col m6 right-align">
 							<p><span>$ 12,650</span></p>
-							<p><span class="ahorro">AHORRO: $ 2,350</span></p>
 						</div>
 					</div>
 				</div>
@@ -183,41 +147,41 @@
 				<div class="col s12 m12 l6">
 					<div class="opcion z-depth-4">
 						<h5>SOLO LOGO</h5>
-						<img src="/images/index/arma-tu-plan-1.svg" alt="opcion">
-						<a href="{{ url('/paso-1') }}" class="btn-custom">INICIAR</a>
+						<img src="images/index/arma-tu-plan-1.svg" alt="opcion">
+						<a href="{{ url('paso-1') }}" class="btn-custom">INICIAR</a>
 						<h4>-5% DE DESCUENTO</h4>
 					</div>
 				</div>
 				<div class="col s12 m12 l6">
 					<div class="opcion opcion-dos z-depth-4">
 						<h5>LOGO + 3 APLICACIONES</h5>
-						<img src="/images/index/arma-tu-plan-1.svg" alt="opcion">
-						<img src="/images/index/arma-tu-plan-3.png" alt="opcion">
-						<a href="{{ url('/paso-1') }}" class="btn-custom">INICIAR</a>
+						<img src="images/index/arma-tu-plan-1.svg" alt="opcion">
+						<img src="images/index/arma-tu-plan-3.png" alt="opcion">
+						<a href="{{ url('paso-1') }}" class="btn-custom">INICIAR</a>
 						<h4>-10% DE DESCUENTO</h4>
 					</div>
 				</div>
 				<div class="col s12 m12 l6">
 					<div class="opcion mobile opcion-tres z-depth-4">
 						<h5>LOGO + APLICACIONES + WEBSITE</h5>
-						<a href="{{ url('/paso-1') }}" class="btn-custom">INICIAR</a>
+						<a href="{{ url('paso-1') }}" class="btn-custom">INICIAR</a>
 						<h4>-15% DE DESCUENTO</h4>
 					</div>
 				</div>
 			</div>
 			<div class="opcion opcion-tres z-depth-4">
 				<h5>LOGO + APLICACIONES + WEBSITE</h5>
-				<img src="/images/index/arma-tu-plan-1.svg" alt="opcion">
-				<img src="/images/index/arma-tu-plan-2.png" alt="opcion">
-				<img src="/images/index/arma-tu-plan-5.png" alt="opcion">
-				<a href="{{ url('/paso-1') }}" class="btn-custom">INICIAR</a>
+				<img src="images/index/arma-tu-plan-1.svg" alt="opcion">
+				<img src="images/index/arma-tu-plan-2.png" alt="opcion">
+				<img src="images/index/arma-tu-plan-5.png" alt="opcion">
+				<a href="{{ url('paso-1') }}" class="btn-custom">INICIAR</a>
 				<h4>-15% DE DESCUENTO</h4>
 			</div>
 			<div id="especifico">
 				<h5>¿BUSCAS ALGO MÁS ESPECÍFICO?</h5>
 				<h4>¡ARMA TU PLAN A MEDIDA!</h4>
-				<a href="{{ url('/paso-1') }}" class="btn-custom">CONTINUAR</a>
-				<a href="{{ url('/paso-1') }}" class="btn-custom mobile">QUIERO INICIAR</a>
+				<a href="{{ url('paso-1') }}" class="btn-custom">CONTINUAR</a>
+				<a href="{{ url('paso-1') }}" class="btn-custom mobile">QUIERO INICIAR</a>
 			</div>
 		</section>
 @endsection
