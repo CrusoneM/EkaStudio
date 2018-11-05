@@ -122,10 +122,11 @@ nav > #nav-info > h3{
     font-weight: 800;
 }
 nav > #nav-info > p{
-	color: rgb(147, 149, 154);
+	color:  rgb(147, 149, 154);
     margin: 3vh 0;
     font-size: 0.8vw;
     font-weight: 800;
+  
 }
 nav > #nav-info > p#nav-date{
     font-size: 1vw;
@@ -140,7 +141,7 @@ nav > #nav-info > p#nav-date{
     transform: rotateZ(-90deg);
 }
 nav > #nav-links{
-	width: 100%;
+	width: 90%;
     margin-top: 3vh;
 	text-align: center;
 	display: inline-block;
@@ -153,7 +154,8 @@ nav > #nav-links > ul > li{
 	margin: 0 6.5vw;
 }
 nav > #nav-links > ul > li > a{
-	color: rgb(147, 149, 154);
+	/*color: rgb(147, 149, 154);*/
+	color: #000000;
     font-size: 1.1vw;
 	font-weight: 800;
 	transition: .3s ease;
@@ -187,6 +189,14 @@ footer > #social-media{
     margin: 35vh auto 5vh;
     padding-top: 8vh;
     width: 45vw;
+    color:#fff;
+}
+footer > #social-media > p{
+	color:  rgb(147, 149, 154);
+    margin: 3vh 0;
+    font-size: 0.8vw;
+    font-weight: 600;
+  
 }
 footer > #social-media > img{
 	width: 5vw;
@@ -195,13 +205,14 @@ footer > #social-media > img{
 footer > #social-media > div > div > a{
 	font-size: 1.5vw;
 	font-weight: 800;
-	color: #000;
+	color: #fff;
 	transition: .3s ease;
 }
 footer > #social-media > div > div > a:hover{
 	color: rgb(147, 149, 154);
 	transition: .3s ease;
 }
+
 footer > #social-media > h6{
 	font-size: 2.1vw;
 	font-weight: 100;
@@ -245,19 +256,19 @@ footer > #links{
 	padding-bottom: 15vh;
 }
 footer > #links > .row{
-	margin:0;
+	margin-left: 15vh;
 }
 footer > #links > div > div > ul.link-list > .link-title{
 	margin-bottom: 4vh;
 }
 footer > #links > div > div > ul.link-list > .link-title > a{
-	color: rgb(147, 149, 154);
+	color: #FFF;
 	font-size: 1.3vw;
 	font-weight: 800;
 	transition: .3s ease;
 }
 footer > #links > div > div > ul.link-list > .link-title > a:hover{
-	color: #000;
+	color: rgb(147, 149, 154);
 	transition: .3s ease;
 }
 footer > #links > div > div > ul.link-list > li > a{
@@ -266,16 +277,12 @@ footer > #links > div > div > ul.link-list > li > a{
 	transition: .3s ease;
 }
 footer > #links > div > div > ul.link-list > li > a:hover{
-	color: #000;
+	color: #FFF;
 	transition: .3s ease;
 }
 
 footer.index{
-	background: url(../images/index/footer-bg.png);
-    background-repeat: no-repeat;
-    background-position: center;
-    background-size: 55vw;
-    background-position-y: -20vh;
+	background-color: #fff;
 }
 footer.servicio{
 	background-color: rgb(35, 31, 32);
@@ -774,10 +781,6 @@ input:not([type]):focus:not([readonly]), input[type=text]:not(.browser-default):
 	border-bottom: 2px solid rgb(35, 31, 32) !important; 
 }
 
-#obligatorio > h5{
-	font-size: 1.5vw;
-}
-
 /*========= Step 2 =========*/
 #form-paso-two{
 	text-align: center;
@@ -1107,12 +1110,13 @@ input:not([type]):focus:not([readonly]), input[type=text]:not(.browser-default):
 	text-align: right;
     padding-right: 6vw;
     font-size: 3vw;
+    height: 6vh;
     margin-top: 0;
     margin-bottom: 0;
     line-height: 12vh;
     font-weight: 800;
 }
-#form-paso-three > form > #total > div#total-total > div > div > p > input{
+#form-paso-three > form > #total > div#total-total > div > div > p > span > input{
 	color: rgb(35, 31, 32);
 	border: 0;
     margin: 0;
@@ -1122,6 +1126,7 @@ input:not([type]):focus:not([readonly]), input[type=text]:not(.browser-default):
     font-size: 3vw;
     margin-top: 0;
     margin-bottom: 0;
+    line-height: 12vh;
     font-weight: 800;
 }
 #form-paso-three > form > #total > div#total-total > div > div > p.ahorro{
@@ -1234,4 +1239,78 @@ section#otras_opciones.servicio > p{
 section#otras_opciones.servicio > #especifico > a.btn-custom{
     width: 53vw;
     font-size: 2vw;
+}
+
+.paso-input > h5{
+	color: rgb(35, 31, 32);
+	font-size: 2.5vw;
+	font-weight: 800;
+	margin-top: 7vh;
+}
+
+/******/
+.logo{
+	padding-top: 10px;
+}
+.color-contact {
+    color:  #FF0000;
+}
+.sidenav{
+	background: #000 !important;
+	text-align: center;
+	padding-top: 5vh;
+}
+nav > #nav-info > p{
+	/*color:  rgb(147, 149, 154);*/
+    margin: 3vh 0;
+    font-size: 0.8vw;
+    font-weight: 800;
+  
+}
+
+/******/
+/*Como funciona section*/
+section#homecabecera{
+	text-align: left;
+	margin: 10vh 0 0vh 0;
+	padding-bottom: 20vh;
+}
+.homecabecera_hr {
+   padding-bottom: 5vh;
+   size: 30%;
+}
+.hr-divider{
+	width: 50vw;
+	height: 0.1vh;
+	margin: left;
+	background: rgb(215,215,215);
+}
+section#beer{
+	text-align: center;
+	width: 50vh;
+	padding-top: 10vh;
+}
+
+section#imagenes{
+	padding-top: 10vh;
+	text-align: center;
+	margin-bottom: 0vh;
+}
+
+section#imagenes2{
+	padding-top: 10vh;
+	text-align: center;
+	margin-bottom: 0vh;
+}
+
+section#servicios {
+    font-size: 1.3vw;
+    font-weight: 600;
+    color: #FFF;
+    text-align: center;
+}
+.f-b{
+	font-size: 2.3vw;
+    font-weight: 800;
+    color: #FFF;
 }
