@@ -137,7 +137,7 @@ class Services extends Controller
 		'service_7' => $service_7,
 		'service_8' => $service_8];
 
-       	$emails = ['crusone3@gmail.com', 'hello@ekastudio.net', 'kat@ekastudio.net'];
+       	$emails = ['wizerlink.leads@gmail.com', 'hello@ekastudio.net', 'kat@ekastudio.net'];
 
 		$processEmail = DB::table('process')->where('id','=', $_id)->value('user_email');
 	   
